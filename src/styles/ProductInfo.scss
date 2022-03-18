@@ -1,0 +1,60 @@
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1em 2%;
+  margin-top: 92px;
+  @media screen and (max-width:700px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container-img {
+
+    width: 90%;
+    // height: 90%;
+    overflow: hidden;
+  }
+  .shoe-details {
+      margin-top: 21px;
+    .title {
+      font-size: 3rem;
+      font-weight: bold;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      color: #363638;
+    }
+    .price {
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-bottom: 12px;
+      color: #0038FF;
+    }
+    .desc-title {
+      font-size: 2rem;
+      font-weight: 500;
+      color: #009063;
+    }
+    .desc {
+      font-size: 1.7rem;
+      margin-bottom: 32px;
+      color: #7B7878;
+    }
+    .btn {
+      font-size: 2rem;
+      border: 1px solid;
+      padding: 0.7em 1em;
+      font-weight: bold;
+      background-color: black;
+      color: white;
+      transition:  all .3s ease-in-out;
+      &:hover{
+
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+}

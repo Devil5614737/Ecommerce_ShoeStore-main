@@ -1,0 +1,114 @@
+@import './variables';
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 52px;
+    // place-items: center;
+    @media screen and (max-width:1000px) {
+      grid-template-columns: repeat(1,1fr);
+      padding: 0em 2%;
+    }
+    .cart-items {
+   }
+    .cart-item {
+        box-shadow: 10px 10px 20px -9px rgba(0, 0, 0, 0.25);
+
+      display: flex;
+      align-items: center;
+      padding: .8em 0.7em;
+      justify-content: space-between;
+      margin-bottom: 22px;
+      .cart-item-image {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+      }
+      .cart-item-name{
+        font-size: 1.3rem;
+        width: 240px;
+        text-align: center;
+      }
+      .qty-btn {
+        font-size: 1.6rem;
+        border-radius: 100%;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px 1px 6px -1px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+      }
+      .quantity {
+        font-size: 1.6rem;
+        font-weight: bold;
+      }
+      img {
+        width: 17px;
+        height: 17px;
+        object-fit: contain;
+        cursor: pointer;
+      }
+    }
+  }
+  .cart-price-info {
+    box-shadow: 10px 10px 34px -9px rgba(0, 0, 0, 0.25);
+
+      padding: 2rem;
+
+      width: 400px;
+      height: 280px;
+
+
+    .cart-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 12px;
+       
+      p {
+
+        font-size: 2.6rem;
+        font-weight: 500;
+        
+      }
+      .count {
+          font-size: 2rem;
+
+      }
+    }
+    .line {
+        width: 100%;
+        background-color: black;
+        height: 6px;
+        margin-bottom: 12px;
+    }
+    .checkout-btn{
+        font-size: 1.6rem;
+        border: 1px solid;
+        background-color: $card-price;
+        padding: .7em 1em;
+        color:white;
+        font-weight: bold;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 120px;
+
+    }
+  }
+
+
+
+.empty-text{
+  font-size: 2rem;
+  span{
+    font-weight: bold;
+    cursor: pointer;
+    &:hover{
+
+      text-decoration: underline;
+    }
+  }
+}

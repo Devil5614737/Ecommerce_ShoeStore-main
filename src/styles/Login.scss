@@ -1,0 +1,65 @@
+.main-login{
+    padding: 1em 2%;
+}
+
+.login-container{
+width: 100%;
+max-width: 400px;
+height: 430px;
+margin: 60px auto;
+display: block;
+padding: 2em 2em;
+background-color: #EDEDED;
+.input-container{
+        .title{
+            font-size: 2.3rem;
+            font-weight: bold;
+            margin-bottom: 42px;
+            }
+        .label{
+            font-size: 1.5rem;
+            margin-bottom: 7px;
+        }
+        .input{
+            width: 100%;
+            height: 60px;
+            margin-bottom: 16px;
+            padding-left: .6rem;
+            font-size: 1.6rem;
+            &:focus{
+                outline: none;
+            }
+display: block;
+        }
+        .button-container{
+            display: flex;
+            align-items: center;
+            .btn{
+            font-size: 1.6rem;
+            border: 1px solid;
+            background-color: black;
+            padding: .6em 1.5em;
+            color: white;
+            }
+            .google-icon{
+                width: 30px;
+                object-fit: contain;
+                height: 30px;
+                margin-left: 22px;
+                cursor: pointer;
+                
+            }
+        }
+        .signup-text{
+            font-size: 1.6rem;
+            margin-top: 12px;
+            span{
+                font-weight: bold;
+                cursor: pointer;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
